@@ -12,6 +12,10 @@
   font-weight: normal;
   font-style: normal;
 }
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Museo Sans Light", sans-serif;
   font-weight: 300;
@@ -37,6 +41,19 @@ img {
   border: none;
   font-family: "Museo Sans Bold", sans-serif;
   font-weight: 700;
+  cursor: pointer;
+  padding: 18px 47px;
+  border-radius: 10px;
+}
+.button:hover {
+  background-color: #ffdb33;
+}
+
+.input {
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  font-size: 15px;
+  padding: 20px 25px;
 }
 
 .header {
@@ -156,6 +173,9 @@ img {
   align-items: center;
   margin-bottom: 20px;
 }
+.main-list__item:last-child {
+  margin-bottom: 0;
+}
 @media (max-width: 640px) {
   .main-list__item {
     margin-bottom: 15px;
@@ -182,4 +202,105 @@ img {
     font-size: 12px;
     max-width: 250px;
   }
+}
+
+.offer {
+  padding: 90px 0;
+  background: url("../img/offer-bg.jpg") no-repeat;
+  background-position: center right;
+  background-size: contain;
+  position: relative;
+}
+@media (max-width: 1200px) {
+  .offer {
+    background-size: cover;
+  }
+}
+@media (max-width: 768px) {
+  .offer {
+    background: #fff;
+  }
+}
+.offer:before {
+  content: "";
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+}
+.offer-block {
+  width: 50%;
+  padding-right: 90px;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .offer-block {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+.offer-title {
+  font-size: 24px;
+  line-height: 35px;
+  max-width: 350px;
+  margin-bottom: 25px;
+  font-family: "Museo Sans Bold", sans-serif;
+  font-weight: 700;
+}
+.offer-subtitle {
+  display: inline-block;
+  max-width: 260px;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+.offer__input {
+  margin-bottom: 30px;
+  width: 240px;
+}
+@media (max-width: 1200px) {
+  .offer__input {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+.offer__input:first-child {
+  margin-right: 10px;
+}
+.offer__button {
+  width: 100%;
+  min-height: 70px;
+}
+@media (max-width: 1200px) {
+  .offer__button {
+    font-size: 13px;
+  }
+}
+@media (max-width: 768px) {
+  .offer__button {
+    font-size: 16px;
+  }
+}
+.offer-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.offer-wrap-text__time {
+  font-size: 15px;
+  margin-top: 30px;
+  max-width: 170px;
+  line-height: 24px;
+}
+.offer-wrap-text__contact {
+  font-size: 15px;
+  max-width: 170px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.offer-wrap-text__phone {
+  font-size: 15px;
+  margin-top: 10px;
+  font-family: "Museo Sans Bold", sans-serif;
+  font-weight: 700;
 }/*# sourceMappingURL=style.css.map */
