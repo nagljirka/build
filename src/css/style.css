@@ -286,21 +286,18 @@ img {
   display: flex;
   justify-content: space-between;
 }
-.offer-wrap-text__time {
-  font-size: 15px;
-  margin-top: 30px;
+.offer-wrap__time {
+  display: block;
   max-width: 170px;
+  font-size: 15px;
+  margin-top: 31px;
   line-height: 24px;
 }
-.offer-wrap-text__contact {
+.offer-wrap__phone {
+  display: block;
+  max-width: 178px;
   font-size: 15px;
-  max-width: 170px;
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
-.offer-wrap-text__phone {
-  font-size: 15px;
-  margin-top: 10px;
-  font-family: "Museo Sans Bold", sans-serif;
-  font-weight: 700;
+  margin-top: 31px;
+  margin-right: 32px;
+  line-height: 24px;
 }/*# sourceMappingURL=style.css.map */
